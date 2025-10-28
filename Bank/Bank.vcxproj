@@ -24,6 +24,7 @@
     <ProjectGuid>{b4e49c5c-46ae-4193-9b69-7994a1907ed1}</ProjectGuid>
     <RootNamespace>Bank</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Bank</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,11 +125,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bank.cpp" />
+    <ClCompile Include="Ccourant.cpp" />
+    <ClCompile Include="Cepagne.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Compte.cpp" />
     <ClCompile Include="Date.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ccourant.h" />
+    <ClInclude Include="Cepagne.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Compte.h" />
     <ClInclude Include="Date.h" />

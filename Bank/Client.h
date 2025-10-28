@@ -3,16 +3,23 @@
 #include"Date.h"
 #include"Compte.h"
 using namespace std;
+#include"Cepagne.h"
+#include"Ccourant.h"
 class Client
 {
 private:
+	static int nbreinstance;
+	static int idcount;
+	int numcli;
 	string nom;
 	string prenom;
 	string CIN;
-	Date *date;
-	Compte *compte;
+	Date date;
+	Cepagne CP;
+	Ccourant CC;
+	Client(string, string, string, Date, Cepagne,Ccourant);
 public:
-	Client(string, string, string, Date*,Compte*);
+	static Client Creator(string, string, string, Date, Cepagne, Ccourant);
 	void afficher()const;
 	~Client();
 };
